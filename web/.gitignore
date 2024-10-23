@@ -4,3 +4,6 @@ dist
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+
+#  Required for vue-tsc with --build flag
+*.tsbuildinfo
