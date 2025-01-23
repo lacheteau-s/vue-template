@@ -1,0 +1,2 @@
+# vue-template
+A boilerplate for [Vue](https://vuejs.org/) projects using Vue 3 with [TypeScript](https://www.typescriptlang.org/), [Single-File Components](https://vuejs.org/guide/scaling-up/sfc), and [Composition API](https://vuejs.org/guide/extras/composition-api-faq.html).
