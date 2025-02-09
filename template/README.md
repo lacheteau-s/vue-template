@@ -4,10 +4,10 @@
 
 ## Requirements
 
-| Package | Version |
-|---------|---------|
-| [Node](https://nodejs.org/en) | >= 20 |
-| [NPM](https://www.npmjs.com/) | >= 10 |
+| Package                       | Version |
+| ----------------------------- | ------- |
+| [Node](https://nodejs.org/en) | >= 20   |
+| [NPM](https://www.npmjs.com/) | >= 10   |
 
 ## Getting started
 
@@ -18,8 +18,8 @@ npm install
 ```
 
 2. Configure local environment (optional):
-    * Create a `.env` file at the root of the project directory.
-    * Add the following configuration:
+   - Create a `.env` file at the root of the project directory.
+   - Add the following configuration:
 
 ```
 PORT=<port-number>
