@@ -3,6 +3,7 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import vuelint from 'eslint-plugin-vue';
+import prettierRecommended from 'eslint-plugin-prettier/recommended';
 
 export default tseslint.config(
 	eslint.configs.recommended,
@@ -17,5 +18,6 @@ export default tseslint.config(
 				tsconfigRootDir: import.meta.dirname
 			}
 		}
-	}
+	},
+	prettierRecommended
 );
