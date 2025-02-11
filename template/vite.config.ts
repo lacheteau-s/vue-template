@@ -17,7 +17,10 @@ export default defineConfig(({ mode }) => {
 			}),
 			vueDevTools(),
 			vuetify({
-				autoImport: true
+				autoImport: true,
+				styles: {
+					configFile: 'src/styles/settings.scss'
+				}
 			})
 		],
 		resolve: {
