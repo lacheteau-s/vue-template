@@ -2,7 +2,12 @@ import './assets/main.css';
 
 import { createApp } from 'vue';
 import App from './App.vue';
+import vuetify from '@/plugins/vuetify';
 
 // https://github.com/typescript-eslint/typescript-eslint/issues/2865
 // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-createApp(App).mount('#app');
+const app = createApp(App);
+
+app.use(vuetify);
+
+app.mount('#app');
