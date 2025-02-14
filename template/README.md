@@ -47,6 +47,16 @@ npm run build
 npm run preview
 ```
 
+## Additional commands
+
+### Code formatting ([Prettier](https://prettier.io/))
+
+```sh
+npm run format
+```
+
+For formatting rules, see [.editorconfig](.editorconfig) and [prettier.config.js](prettier.config.js).
+
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar).
+[VSCode](https://code.visualstudio.com/) + [extensions](.vscode/extensions.json)
