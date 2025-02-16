@@ -1,0 +1,57 @@
+# {Title}
+
+{Description}
+
+## Requirements
+
+| Package | Version |
+|---------|---------|
+| [Node] | >= 20 |
+| [NPM] | >= 10 |
+
+## Getting started
+
+1. Install dependencies:
+
+```sh
+npm install
+```
+
+2. Configure local environment (optional):
+    * Create a `.env` file at the root of the project directory.
+    * Add the following configuration:
+
+```
+PORT=<port-number>
+```
+
+If no valid `PORT` is specified, a default one will be assigned.
+
+3. Compile and run locally:
+
+```sh
+npm run dev
+```
+
+## Build for production
+
+1. Build the application:
+
+```sh
+npm run build
+```
+
+2. Preview build:
+
+```sh
+npm run preview
+```
+
+## Recommended IDE Setup
+
+[VSCode] + [Volar].
+
+[Node]: https://nodejs.org/en
+[NPM]: https://www.npmjs.com/
+[VSCode]: https://code.visualstudio.com/
+[Volar]: https://marketplace.visualstudio.com/items?itemName=Vue.volar
