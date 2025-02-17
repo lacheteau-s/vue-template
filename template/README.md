@@ -57,6 +57,21 @@ npm run format
 
 For formatting rules, see [.editorconfig] and [prettier.config.js].
 
+### Linting ([ESLint])
+
+Linting is configured to support [TypeScript] and [Vue files].
+Together with the recommended [IDE setup], you should get linting errors directly in your editor.
+
+Alternatively, you can run the linter from the command line:
+
+```sh
+npm run lint
+```
+
+Note that the linter is configured to also [report Prettier issues].
+
+For linting configuration, see [eslint.config.js].
+
 ## Recommended IDE Setup
 
 [VSCode] + [extensions]
@@ -66,5 +81,11 @@ For formatting rules, see [.editorconfig] and [prettier.config.js].
 [Prettier]: https://prettier.io/
 [.editorconfig]: .editorconfig
 [prettier.config.js]: prettier.config.js
+[ESLint]: https://eslint.org/
+[TypeScript]: https://typescript-eslint.io/
+[Vue files]: https://eslint.vuejs.org/
+[IDE setup]: #recommended-ide-setup
+[report Prettier issues]: https://github.com/prettier/eslint-plugin-prettier
+[eslint.config.js]: eslint.config.js
 [VSCode]: https://code.visualstudio.com/
 [extensions]: .vscode/extensions.json
