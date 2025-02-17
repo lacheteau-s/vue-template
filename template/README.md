@@ -5,9 +5,9 @@
 ## Requirements
 
 | Package | Version |
-|---------|---------|
-| [Node] | >= 20 |
-| [NPM] | >= 10 |
+| ------- | ------- |
+| [Node]  | >= 20   |
+| [NPM]   | >= 10   |
 
 ## Getting started
 
@@ -18,8 +18,8 @@ npm install
 ```
 
 2. Configure local environment (optional):
-    * Create a `.env` file at the root of the project directory.
-    * Add the following configuration:
+   - Create a `.env` file at the root of the project directory.
+   - Add the following configuration:
 
 ```
 PORT=<port-number>
@@ -47,11 +47,24 @@ npm run build
 npm run preview
 ```
 
+## Additional commands
+
+### Code formatting ([Prettier])
+
+```sh
+npm run format
+```
+
+For formatting rules, see [.editorconfig] and [prettier.config.js].
+
 ## Recommended IDE Setup
 
-[VSCode] + [Volar].
+[VSCode] + [extensions]
 
 [Node]: https://nodejs.org/en
 [NPM]: https://www.npmjs.com/
+[Prettier]: https://prettier.io/
+[.editorconfig]: .editorconfig
+[prettier.config.js]: prettier.config.js
 [VSCode]: https://code.visualstudio.com/
-[Volar]: https://marketplace.visualstudio.com/items?itemName=Vue.volar
+[extensions]: .vscode/extensions.json
