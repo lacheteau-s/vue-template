@@ -50,30 +50,37 @@ After a brief consideration, I determined that it wouldn't be worth the effort f
 
 ## Features
 
-**Current [template version][12]:** `template/base`
+**Current [template version][12]:** `template/pinia`
 
 In addition to TypeScript and Vue, this template includes the following features:
 
 | Feature | Libraries |
 |---------|-----------|
-| Code formatting | [prettier][13] |
-| Linting | [eslint][14], [typescript-eslint][15], [eslint-plugin-vue][16], [eslint-plugin-prettier][17], [eslint-config-prettier][18] |
+| State management | [pinia][13] |
+
+### Inherited features
+
+| Feature | Libraries | Inherited from |
+|---------|-----------|----------------|
+| Code formatting | [prettier][14] | `template/base` |
+| Linting | [eslint][15], [typescript-eslint][16], [eslint-plugin-vue][17], [eslint-plugin-prettier][18], [eslint-config-prettier][19] | `template/base` |
 
 [12]: #template-version
-[13]: https://prettier.io/
-[14]: https://eslint.org/
-[15]: https://typescript-eslint.io/
-[16]: https://eslint.vuejs.org/
-[17]: https://github.com/prettier/eslint-plugin-prettier
-[18]: https://github.com/prettier/eslint-config-prettier
+[13]: https://pinia.vuejs.org/
+[14]: https://prettier.io/
+[15]: https://eslint.org/
+[16]: https://typescript-eslint.io/
+[17]: https://eslint.vuejs.org/
+[18]: https://github.com/prettier/eslint-plugin-prettier
+[19]: https://github.com/prettier/eslint-config-prettier
 
 ## How to use
 
-Simply copy the `template` folder to the desired location, and follow the template's [README][19] (⚠️ don't forget to edit the title and description).
+Simply copy the `template` folder to the desired location, and follow the template's [README][20] (⚠️ don't forget to edit the title and description).
 
 ### degit (recommended)
 
-⚠️ Requires [degit][20]
+⚠️ Requires [degit][21]
 
 ```
 degit github:lacheteau-s/vue-template/template[#<branch>] <outdir>
@@ -116,21 +123,21 @@ cp -R vue-template/template /home/projects/MyApp
 
 This will clone the repository, fetching and checking out only the branch `template/pinia`, and copy the contents of the `template` directory to `/home/projects/MyApp`.
 
-[19]: template/README.md
-[20]: https://github.com/Rich-Harris/degit
+[20]: template/README.md
+[21]: https://github.com/Rich-Harris/degit
 
 ## Purpose
 
 This template is part of a personal initiative to catch up with web development after several years of focusing mostly on desktop, mobile, and backend development.
 
 I chose Vue because it appealed to me more than Angular or React.
-It [borrows concepts][21] from the [MVVM][22] pattern which I've had extensive experience with, working with [WPF][23], and [Xamarin/.NET MAUI][24].
+It [borrows concepts][22] from the [MVVM][23] pattern which I've had extensive experience with, working with [WPF][24], and [Xamarin/.NET MAUI][25].
 
-My end goal here wasn't to merely learn Vue but to also understand the whole ecosystem around it (like [Vite][25]).
+My end goal here wasn't to merely learn Vue but to also understand the whole ecosystem around it (like [Vite][26]).
 So instead of just initializing a new project with `vuejs/create-vue`, I dug into every file in an effort to understand why things are the way they are, and did a few tweaks where I deemed appropriate, all while gaining precious knowledge.
 
-[21]: https://012.vuejs.org/guide/
-[22]: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel
-[23]: https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview
-[24]: https://dotnet.microsoft.com/en-us/apps/maui
-[25]: https://vite.dev/
+[22]: https://012.vuejs.org/guide/
+[23]: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel
+[24]: https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview
+[25]: https://dotnet.microsoft.com/en-us/apps/maui
+[26]: https://vite.dev/
