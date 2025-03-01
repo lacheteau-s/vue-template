@@ -1,7 +1,11 @@
 <script setup lang="ts">
+	import { useCounterStore } from '@/stores/counter';
+
 	defineProps<{
 		msg: string;
 	}>();
+
+	const store = useCounterStore();
 </script>
 
 <template>
@@ -12,6 +16,7 @@
 			<a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
 			<a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
 		</h3>
+		<p>Items clicked: {{ store.count }}</p>
 	</div>
 </template>
 
@@ -25,6 +30,10 @@
 
 	h3 {
 		font-size: 1.2rem;
+	}
+
+	p {
+		margin-top: 20px;
 	}
 
 	.greetings h1,
