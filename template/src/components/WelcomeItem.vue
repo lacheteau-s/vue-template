@@ -1,6 +1,16 @@
+<script setup lang="ts">
+	import { useCounterStore } from '@/stores/counter';
+
+	const store = useCounterStore();
+
+	function onItemClicked() {
+		store.increment();
+	}
+</script>
+
 <template>
 	<div class="item">
-		<i>
+		<i @click="onItemClicked">
 			<slot name="icon"></slot>
 		</i>
 		<div class="details">
